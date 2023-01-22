@@ -1,0 +1,215 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-size: 80%;
+}
+
+body{
+    background: rgba(128, 128, 128, 0.386);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    background: #3498db;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+}
+
+header h1{
+    font-size: 2.5rem;
+}
+
+header .nav a{
+ margin: 0 1rem;
+ font-size: 1.6rem;
+ color: black;
+}
+
+header .nav a:hover{
+    background: orange;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+header .icon i{
+    font-size: 2.5rem;
+}
+
+#bar-btn{
+    display: none;
+}
+
+
+section{
+   padding: 2rem 7%;
+}
+
+.Home-Section{
+    background: url("./Card-img.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.Home-Section .content{
+    max-width: 50rem;
+    color: #fff;
+}
+
+
+.Home-Section .content h3{
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.Home-Section .content p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+    font-weight: lighter;
+}
+
+ .btn{
+    background: #3498db;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    display: inline-block;
+    border-radius: .5rem;
+    color: #fff;
+}
+
+.btn:hover{
+    background: orange;
+}
+
+.Training-Section{
+    min-height: 100vh;
+  
+}
+
+.Training-content p{
+    font-size: 1.7rem;
+    line-height: 1.8;
+}
+
+.Training-content ul li{
+    font-size: 1.7rem;
+    line-height: 1.8;
+}
+
+.heading{
+    font-size: 4rem;
+    color: #3498db;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 3rem;
+}
+.sub-heading{
+    font-size: 2.5rem;
+    color: #3498db;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 2rem 0 2rem 0;
+    
+}
+
+.Benefits-Section{
+    min-height: 100vh;
+}
+
+.Benefits-content p{
+    font-size: 1.7rem;
+    line-height: 1.8;
+}
+.Benefits-content ul li{
+    font-size: 1.7rem;
+    line-height: 1.8;
+}
+
+.Enroll-Section{
+    min-height: 100vh;
+}
+
+.Enroll-content p{
+    font-size: 1.7rem;
+    line-height: 1.8;
+}
+
+.Enroll-content ul li{
+    font-size: 1.7rem;
+    line-height: 1.8; 
+}
+
+
+@media (max-width:991px){
+    html{
+        font-size: 70%;
+     }
+ 
+    header{
+        padding: 1.5rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    
+.Home-Section, .Benefits-Section, .Enroll-Section, .Training-Section{
+       text-align: center;
+}
+
+header h1{
+    font-size: 2rem;
+}
+
+}
+
+@media (max-width:768px) {
+    
+    .Home-Section, .Benefits-Section, .Enroll-Section, .Training-Section{
+        margin-top: 2rem;
+     }
+ 
+
+    #bar-btn{
+        display: inline-block;
+    }
+
+    header .nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #fff;
+        width: 25rem;
+        height: 80vh;
+    }
+
+    header .nav.active{
+        right:0;
+    }
+    
+    header .nav a{
+        display: block;
+        margin: 1.3rem;
+        padding: 2rem;
+        font-size: 2rem;
+        color: var(--black);
+
+    }
+
+}
